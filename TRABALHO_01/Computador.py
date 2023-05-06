@@ -18,8 +18,6 @@ class Computador(ABC):
         print ("Cor: " + self.cor)
         print ("Preço: R$ " + str(self.preco))
 
-    @abstractmethod
-    def PerTypePrint(self):
-        pass
+
 
 

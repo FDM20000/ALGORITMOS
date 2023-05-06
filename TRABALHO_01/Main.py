@@ -24,12 +24,8 @@ else:
     note = Notebook("Aspire F15", "Blue", 3000, 2)
     print("NOTEBOOK")
     note.imprimir()
-    pwd = str(input("Digite a palavra >>senha<< para desencapsular. ").upper())
-    if pwd == "SENHA":
-        note.PerTypePrint()
-    else:
-        print("A senha é o óbvio !")
-          
+    bateria = str(note.get_Bat())
+    print("Tempo da Bateria (hs): " +(bateria))  
     note.Cadastrar()
     print("++++++++++++++++++++++")
 
