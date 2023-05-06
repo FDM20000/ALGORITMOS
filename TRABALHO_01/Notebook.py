@@ -9,8 +9,10 @@ class Notebook(Computador):
         print("-------------------")
         super().imprimir()
    
-    def PerTypePrint(self):
-        print("Tempo da Bateria (hs): " +str(self.__tempoDaBateria))
+    
+    def get_Bat(self):
+        return self.__tempoDaBateria
+    
         
      
     def Cadastrar(self):
@@ -18,7 +20,9 @@ class Notebook(Computador):
         print ("Cadastro de Equipamento")
         print(" ")
         choice = str(input ("Deseja cadastrar o equipamento (s/n) ?").lower())
+        print(" ")
         if choice == "s":
             print ("Notebook Cadastrado !")
+
         else:
             print("FIM")
